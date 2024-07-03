@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rectángulo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Rectángulo</h1>
+        <form id="rectangle-form">
+            <div class="form-group">
+                <label for="base">Base:</label>
+                <input type="number" id="base" name="base" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" name="altura" required>
+            </div>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="resultados">
+            <p>Área: <span id="area"></span></p>
+            <p>Perímetro: <span id="perimetro"></span></p>
+            <p>Diagonal: <span id="diagonal"></span></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
